@@ -1,5 +1,5 @@
 {
-  "name": "wikipediajs",
+  "name": "@cytrus-re/wikipediajs",
   "version": "1.4.2",
   "description": "Promise-based Wikipedia API wrapper.",
   "main": "dist/wiki.js",
