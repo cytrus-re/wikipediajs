@@ -5,5 +5,5 @@ const FEATURED = "featuredfeed";
 module.exports = {
   QUERY_GENERATOR,
   RANDOM_GENERATOR,
-  FEATURED
-}; 
+  FEATURED,
+};

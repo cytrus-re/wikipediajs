@@ -6,45 +6,45 @@ const DEFAULT_PARAMS = {
   prop: "info",
   inprop: "url",
   format: "json",
-  action: "query"
+  action: "query",
 };
 
-function doSearch (searchTerm, lang = "en", options = {}) {
+function doSearch(searchTerm, lang = "en", options = {}) {
   const params = _getParams(options, {
     gsrsearch: searchTerm,
-    generator: QUERY_GENERATOR
+    generator: QUERY_GENERATOR,
   });
 
-  return queryApi(lang, params).then(response => {
+  return queryApi(lang, params).then((response) => {
     return response;
   });
 }
 
-function doRandom (lang = "en", options = {}) {
+function doRandom(lang = "en", options = {}) {
   const params = _getParams(options, {
-    generator: RANDOM_GENERATOR
+    generator: RANDOM_GENERATOR,
   });
 
-  return queryApi(lang, params).then(response => {
+  return queryApi(lang, params).then((response) => {
     return response;
   });
 }
 
-function doAllCatergories (lang = "en", options = {}) {
+function doAllCatergories(lang = "en", options = {}) {
   const params = _getParams(options, {
-    list: "allcategories"
+    list: "allcategories",
   });
 
-  return queryApi(lang, params).then(response => {
+  return queryApi(lang, params).then((response) => {
     return response;
   });
 }
 
-function _getParams (queryOptions = {}, generatorOptions = {}) {
+function _getParams(queryOptions = {}, generatorOptions = {}) {
   return Object.assign({}, DEFAULT_PARAMS, queryOptions, generatorOptions);
 }
 module.exports = {
   doSearch,
   doRandom,
-  doAllCatergories
+  doAllCatergories,
 };

@@ -6,10 +6,10 @@ const queryApi = (lang = "en", params) => {
   return axios
     .get(url, {
       params: {
-        ...params
-      }
+        ...params,
+      },
     })
-    .then(response => {
+    .then((response) => {
       if (response.data.error) {
         throw response.data.error.info;
       }
@@ -19,5 +19,5 @@ const queryApi = (lang = "en", params) => {
 
 module.exports = {
   queryApi,
-  API_BASE
+  API_BASE,
 };
