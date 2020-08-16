@@ -1,11 +1,11 @@
-# wikipediajs
+# cytrus-re/wikipediajs
 
 [![Travis build](https://img.shields.io/travis/maximodleon/wikipediajs.svg?style=flat-square)]()
 [![npm](https://img.shields.io/npm/v/wikipediajs.svg?style=flat-square)]()
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
-Promise-based wikipedia API wrapper
+Promise-based Wikipedia API wrapper.
 
 # Table of contents
 
@@ -18,33 +18,33 @@ Promise-based wikipedia API wrapper
 Install via [npm](https://www.npmjs.com/package/wikipediajs)
 
 ```
-$ npm install wikipediajs
+$ npm install @cytrus-re/wikipediajs
 ```
 
-Via a CDN
+...or via a CDN
 
 ```html
 <script src="https://unpkg.com/wikipediajs/dist/index.umd.min.js" />
 ```
 # Features
-* Search wikipedia articles in any language
+* Search Wikipedia articles in any language
 * Get a random article
 * Get feed for Picture of the day, featured article or 'on this day' articles
 
 # Usage
 
-* import module
+* Import module:
 
   ```js
   import wiki from 'wikipediajs'
   ```
 
-  or require
-
+  ...or require:
+  
   ```js
    const wiki = require('wikipediajs')
   ```
-* Search for article
+* Search for an article:
 
   ```js
   wiki.search('savanna hawk')
@@ -52,7 +52,7 @@ Via a CDN
     .catch((error) => console.log(error))
   ```
 
-* search for an article in different language
+* Search for an article in a different language:
 
   ```js
   wiki.search('Veulta a san juan', 'es')
