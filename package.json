@@ -1,7 +1,7 @@
 {
   "name": "wikipediajs",
   "version": "0.0.0-development",
-  "description": "Wikipedia js api wrapper",
+  "description": "Promise-based Wikipedia API wrapper.",
   "main": "dist/wiki.js",
   "unpkg": "dist/index.umd.min.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maximodleon/wikipediajs.git"
+    "url": "https://github.com/cytrus-re/wikipediajs.git"
   },
   "keywords": [
     "api",
@@ -28,12 +28,12 @@
     "dist",
     "README.md"
   ],
-  "author": "Máximo De León <maximodleon@gmail.com>",
+  "author": "Ed L <beartechtalks@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maximodleon/wikipediajs/issues"
+    "url": "https://github.com/cytrus-re/wikipediajs/issues"
   },
-  "homepage": "https://github.com/maximodleon/wikipediajs#readme",
+  "homepage": "https://github.com/cytrus-re/wikipediajs#readme",
   "dependencies": {
     "axios": "0.17.1",
     "xml-js": "1.6.2"
