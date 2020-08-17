@@ -2,7 +2,7 @@
   "name": "@cytrus-re/wikipediajs",
   "version": "1.4.3",
   "description": "Promise-based Wikipedia API wrapper.",
-  "main": "dist/src/wiki.js",
+  "main": "./src/wiki.js",
   "unpkg": "dist/index.umd.min.js",
   "scripts": {
     "test": "mocha src/wiki.spec.js",
