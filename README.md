@@ -6,8 +6,6 @@
 
 Promise-based Wikipedia API wrapper.
 
-Hi
-
 # Table of contents
 
 - [Installation](#installation)
